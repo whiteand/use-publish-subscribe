@@ -1,0 +1,54 @@
+{
+  "name": "use-publish-subscribe",
+  "version": "0.0.1",
+  "description": "Hook that can be used to share some state without extracting of the state into parent",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest ./src --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "coveralls": "jest --coverage --config jestconfig.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "size": "size-limit"
+  },
+  "size-limit": [
+    {
+      "path": "lib/index.js"
+    }
+  ],
+  "keywords": [
+    "react",
+    "hook",
+    "state",
+    "publisher",
+    "subscriber"
+  ],
+  "author": "andrewbeletskiy",
+  "license": "MIT",
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.4.2",
+    "@types/jest": "^24.0.13",
+    "coveralls": "^3.0.3",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "size-limit": "^4.4.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@types/react": "^16.9.53",
+    "react": "^16.8.0"
+  }
+}
