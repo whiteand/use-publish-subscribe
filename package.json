@@ -17,6 +17,14 @@
     "coveralls": "jest --coverage --config jestconfig.json && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "size": "size-limit"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteand/use-publish-subscribe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whiteand/use-publish-subscribe/issues"
+  },
+  "homepage": "https://github.com/whiteand/use-publish-subscribe#readme",
   "size-limit": [
     {
       "path": "lib/index.js"
