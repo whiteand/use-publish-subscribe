@@ -53,7 +53,7 @@
     "typescript": "^3.8.3"
   },
   "files": [
-    "lib/**/*"
+    "lib/*"
   ],
   "dependencies": {
     "@types/react": "^16.9.53",

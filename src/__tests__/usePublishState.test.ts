@@ -1,4 +1,3 @@
-import { usePublishSubscribe } from "../usePublishSubscribe";
 import { usePublishedState } from "../helpers";
 
 jest.mock("react", () => ({
