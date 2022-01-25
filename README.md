@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/whiteand/use-publish-subscribe.svg?branch=master)](https://travis-ci.com/whiteand/use-publish-subscribe)
 [![Coverage Status](https://coveralls.io/repos/github/whiteand/use-publish-subscribe/badge.svg?branch=master)](https://coveralls.io/github/whiteand/use-publish-subscribe?branch=master)
 
-**Size: 3.46 KB** (minified and gzipped). Only React dependency. [Size Limit](https://github.com/ai/size-limit) controls the size.
+**Size: 3.39 KB** (minified and gzipped). Only React dependency. [Size Limit](https://github.com/ai/size-limit) controls the size.
 
 # Where can I use it?
 
