@@ -55,7 +55,7 @@
   "files": [
     "lib/**/*"
   ],
-  "peerDependencies": {
+  "dependencies": {
     "@types/react": "^16.9.53",
     "react": "^16.8.0"
   }
