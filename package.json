@@ -1,6 +1,6 @@
 {
   "name": "use-publish-subscribe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hook that can be used to share some state without extracting of the state into parent",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

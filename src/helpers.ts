@@ -8,7 +8,7 @@ export function usePublishedState<S>(
   const [state, setState] = useState<S>(initialValue);
 
   useLayoutEffect(
-    function () {
+    function() {
       return subscribe(setState, true);
     },
     [subscribe, setState]
